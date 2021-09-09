@@ -1,0 +1,3 @@
+tech  
+life  
+and more
