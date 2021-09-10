@@ -200,5 +200,5 @@ if __name__ == "__main__":
     parser.add_argument("github_token", help="github_token")
     parser.add_argument("repo_name", help="repo_name")
     parser.add_argument("--issue_number", help="issue_number", default=None, required=False)
-    args, unknown = parser.parse_known_args()
+    args, options = parser.parse_known_args()
     main(options.github_token, options.repo_name, options.issue_number)
