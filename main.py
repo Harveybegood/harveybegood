@@ -1,19 +1,19 @@
 # -*- coding: utf-8 -*-
 import argparse
 import os
-import re
+#import re
 
 from github import Github
 
 MD_HEAD = """## Gitblog
-**<p align = "center">[Harvey's blog](https://harveybegood.github.io)</p>**
+**<p align = "center">[Harvey's blog](https://harveybegood.github.io/blog)</p>**
 **<p align = "center">about my tech learning and life</p>**
 ## contact 
-- Blog: https://harveybegood.github.io
+- Blog: https://harveybegood.github.io/myblog
 """
 
-BACKUP_DIR = "BACKUP"
-ANCHOR_NUMBER = 5
+BACKUP_DIR = "backup"
+ANCHOR_NUMBER = 15
 TOP_ISSUES_LABELS = ["Top"]
 TODO_ISSUES_LABELS = ["TODO"]
 #FRIENDS_LABELS = ["Friends"]
