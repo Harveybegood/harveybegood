@@ -1,1 +1,5 @@
 theme: jekyll-theme-midnight
+env:
+  GITHUB_NAME:harveybegood
+  GITHUB_EMAIL:harveymorning@gmail.com
+  
