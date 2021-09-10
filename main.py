@@ -6,7 +6,7 @@ import os
 from github import Github
 
 MD_HEAD = """## Gitblog
-**<p align = "center">[Harvey's blog](https://harveybegood.github.io/blog)</p>**
+**<p align = "center">[Harvey's blog](https://harveybegood.github.io/myblog)</p>**
 **<p align = "center">about my tech learning and life</p>**
 ## contact 
 - Blog: https://harveybegood.github.io/myblog
