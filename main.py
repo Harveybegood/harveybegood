@@ -5,10 +5,10 @@ import os
 from github import Github
 
 MD_HEAD = """## Gitblog
-**<p align = "center">[Harvey's blog](https://harveybegood.github.io/myblog)</p>**
+**<p align = "center">[Harvey's blog](https://harveybegood.github.io/)</p>**
 **<p align = "center">about my tech learning and life</p>**
 ## contact 
-- Blog: https://harveybegood.github.io/myblog
+- Blog: https://harveybegood.github.io/
 """
 
 BACKUP_DIR = "backup"
