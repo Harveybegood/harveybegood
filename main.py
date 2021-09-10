@@ -13,7 +13,7 @@ MD_HEAD = """## Gitblog
 """
 
 BACKUP_DIR = "backup"
-ANCHOR_NUMBER = 15
+ANCHOR_NUMBER = 5
 TOP_ISSUES_LABELS = ["Top"]
 TODO_ISSUES_LABELS = ["TODO"]
 #FRIENDS_LABELS = ["Friends"]
@@ -176,9 +176,12 @@ def add_md_label(repo, md, me):
         for label in labels:
 
             # we don't need add top label again
-            if label.name in IGNORE_LABELS:
+            if label.name in TOP_ISSUES_LABELS:
                 continue
-
+               
+            if label.name in TODO_ISSUES_LABLES:
+                contiune
+                
             issues = get_issues_from_label(repo, label)
             if issues.totalCount:
                 md.write("## " + label.name + "\n")
@@ -219,7 +222,7 @@ def main(token, repo_name, issue_number=None, dir_name=BACKUP_DIR):
     repo = get_repo(user, repo_name)
     add_md_header("README.md")
     # add to readme one by one, change order here
-    for func in [add_md_firends, add_md_top, add_md_recent, add_md_label, add_md_todo]:
+    for func in [add_md_top, add_md_recent, add_md_label, add_md_todo]:
         func(repo, "README.md", me)
 
     to_generate_issues = get_to_generate_issues(repo, dir_name, issue_number)
