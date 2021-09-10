@@ -6,10 +6,13 @@ import re
 from github import Github
 
 MD_HEAD = """## Gitblog
-My personal blog using issues and GitHub Actions
+**<p align = "center">[Harvey's blog](https://harveybegood.github.io/myblog)</p>**
+**<p align = "center">about my tech learning and life</p>**
+## contact 
+- Blog: [https://harveybegood.github.io/myblog](https://harveybegood.github.io/myblog)
 """
 
-BACKUP_DIR = "BACKUP"
+BACKUP_DIR = "backup"
 ANCHOR_NUMBER = 5
 TOP_ISSUES_LABELS = ["Top"]
 TODO_ISSUES_LABELS = ["TODO"]
